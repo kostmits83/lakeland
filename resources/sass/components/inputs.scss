@@ -1,0 +1,69 @@
+
+.form-control {
+	padding-top: 0.5*$unit;
+	padding-bottom: 0.5*$unit;
+	height: 4*$unit;
+	border: 1px solid $color-fourth;
+	@include border-radius(0.2*$unit);
+	@include transition(all $transition-time-main);
+	&:hover {
+		color: $color-main;
+		background-color: #EAF1F7;
+		
+	}
+	&:active, &:focus {
+		@include box-shadow(none);
+	}
+}
+
+label {
+	font-weight: bold;
+}
+
+#body {
+	.icheck {
+		margin-left: -20px;
+		margin-left: 0;
+		&--radio {
+			.form-check-label::before {
+				background-color: transparent;
+			}
+			.form-check-label::after {
+				width: 8px;
+				height: 8px;
+				margin-top: 8px;
+				margin-left: 7px;
+				border: 1px solid $color-link;
+				transform: none;
+				background-color: $color-link;
+				border-radius: 50%;;
+			}
+		}
+		&--fuzziness {
+			padding-left: 0 !important;
+			input:first-child:checked + input[type="hidden"] + label::after, input:first-child:checked + label::after {
+				top: -3px !important;
+			}
+		}
+	}
+    [class*="icheck-"] > label {
+        padding-left: 25px !important;
+        min-height: 16px;
+        line-height: 16px;
+		font-size: 1.4*$unit;
+    }
+    [class*="icheck-"] > input:first-child + input[type="hidden"] + label::before, [class*="icheck-"] > input:first-child + label::before {
+        width: 16px;
+        height: 16px;
+        margin-left: -25px;
+    }
+    [class*="icheck-"] > input:first-child:checked + input[type="hidden"] + label::after, [class*="icheck-"] > input:first-child:checked + label::after {
+        top: 6px;
+        left: -3px;
+    }
+	[class*="icheck-"] {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	
+}

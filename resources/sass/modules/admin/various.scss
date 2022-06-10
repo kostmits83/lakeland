@@ -1,0 +1,15 @@
+
+#body .breadcrumb {
+    padding: $unit 2*$unit !important;
+    background-color: #EDF1FD !important;
+}
+
+.jumbotron {
+    background-color: #F8F6FF !important;
+}
+
+.app-header {
+    &.navbar {
+        padding: 0;
+    }
+}

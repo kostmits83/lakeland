@@ -1,0 +1,20 @@
+
+.loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -6*$unit; /* Negative half of height */
+	margin-left: -6*$unit; /* Negative half of width */
+	display: none;
+	border: 1.6*$unit solid #F3F3F3;
+	border-top: 1.6*$unit solid #3498DB;
+	border-radius: 50%;
+	width: 12*$unit;
+	height: 12*$unit;
+	animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }

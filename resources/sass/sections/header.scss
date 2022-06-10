@@ -1,0 +1,51 @@
+
+.header {
+    background-color: $color-secondary
+}
+
+.navbar {
+    &-text {
+        padding-left: $unit;
+        text-align: center;
+    }
+}
+
+.navbar-toggle {
+    background-color: $color-main;
+    border-color: $color-main;
+    &:hover {
+        background-color: $color-fourth;
+    }
+}
+.main-navbar {
+    padding: 0.5*$unit 0;
+    background-color: $color-background-secondary;
+    &__item {
+        padding: $unit;
+        background-color: transparent;
+        &--active {
+            font-weight: bold;
+        }
+        .main-navbar__link {
+            padding: 1.5*$unit $unit;
+            background-color: transparent;
+        }
+    }
+    &__link {
+        font-size: 1.6*$unit;
+        color: $color-link;
+        &:hover {
+            color: $color-link;
+        }
+    }
+    .active > .main-navbar__link {
+        color: $color-link;
+    }
+    .button--logout {
+        margin-left: 2*$unit;
+        margin-top: 0.8*$unit;
+        padding-top: 0.7*$unit;
+        padding-bottom: 0.7*$unit;
+        width: auto;
+    }
+}

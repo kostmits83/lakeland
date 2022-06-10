@@ -1,0 +1,19 @@
+
+.scroll-to-top {
+	position: fixed;
+	bottom: 5*$unit;
+	right: 5*$unit;
+	display: none;
+	padding: 1.5*$unit;
+	color: #FFF;
+	line-height: 1;
+	background-color: $color-attention;
+	&:hover {
+		background-color: $color-attention-dark;
+		transition: all $transition-time-main;
+	}
+	&__icon {
+		font-size: 2.2*$unit;
+		color: #FFF;
+	}
+}

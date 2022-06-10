@@ -1,0 +1,32 @@
+
+.banner {
+	$parent: &;
+    display: block;
+    margin: 0 auto;
+	padding: 10*$unit 0;
+	text-align: center;
+    background-color: #232F3F;
+	// Clear the inline-block elements
+	white-space: pre-line /* Create new line for each DIV */;
+    *white-space: pre /*FixIE7*/;
+    *word-wrap: break-word /*FixIE7*/;
+	&__header, &__info {
+		$child: &;
+		margin: 0 auto $unit auto;
+		padding: $unit $unit;
+		line-height: 1.1;
+		text-align: center;
+		@include inline--dark($parent, $child);
+	}
+	&__header {
+		font-size: 3.6*$unit;
+	}
+	&__info {
+		font-size: 2.8*$unit;
+	}
+	&--same {
+		background: {
+			image: url("/images/decorative/keyboard.jpg");
+		}
+	}
+}

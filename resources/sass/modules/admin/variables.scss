@@ -1,0 +1,53 @@
+
+// Typography
+$unit: 0.625rem;
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$color-main: #07273D;
+$color-secondary: #EDF1FD;
+$color-third: #F7F9FF;
+
+$color-background-main: #FFF;
+$color-background-secondary: $color-secondary;
+$color-background-third: $color-third;
+$color-background-fourth: #3F3E61;
+$color-background-fourth-opacity: rgba(63, 62, 97, 0.8);
+$color-bet-table-main: #202735;
+
+
+// Color Links and Buttons
+$color-default: $color-main;
+$color-default-light: #0A3A5b;
+$color-default-dark: #04141F;
+
+$color-over-background-fourth: #DBE1F1;
+
+$color-link: #0076C9;
+$color-link-hover: #005896;
+
+$color-success: #3F9974;
+$color-success-light: #49B186;
+$color-success-dark: #358162;
+
+$color-attention: #AF0E1F;
+$color-attention-light: #CE1125;
+$color-attention-dark: #900B19;
+
+$color-info: #039BE5;
+$color-info-light: #0EAEfC;
+$color-info-dark: #0384C3;
+
+$color-warning: #FF9100;
+$color-warning-light: #FFA022;
+$color-warning-dark: #DD7E00;
+
+$color-bet-type-single: #324B80;
+$color-bet-type-single-secondary: #23355B;
+$color-bet-type-multi: #4D6A8B;
+$color-bet-type-multi-secondary: #3B516A;
+
+/*-------------------------- Transition --------------------------*/
+$transition-time-main: 0.4s;

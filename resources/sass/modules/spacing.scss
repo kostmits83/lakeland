@@ -1,0 +1,15 @@
+
+.spacing {
+	&-vertical {
+		&-outer {
+			&-main {
+				margin-bottom: $spacing-vertical-outer-main;
+			}
+		}
+		&-inner {
+			&-main {
+				padding-top: $spacing-vertical-outer-main;
+			}
+		}
+	}
+}

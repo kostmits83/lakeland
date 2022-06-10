@@ -1,0 +1,40 @@
+
+body, html {
+    height: 100%;
+    background-color: #FFF;
+	font-family: Raleway;
+	color: $color-main;
+}
+
+#app {
+	// Change footer attritubes also
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 30*$unit;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.relative {
+	position: relative;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+$classMb: mb-;
+
+// loops through 4 times
+@for $i from 0 through 4 {
+	.#{$classMb}#{$i} {
+		margin-bottom: $i * $unit;
+	}
+}
+
+p {
+	margin: 0 0 $unit;
+	line-height: 1.75;
+}
